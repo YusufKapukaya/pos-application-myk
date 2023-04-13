@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Electrolize", sans-serif;
+  font-family: "Poppins", sans-serif;
+  @apply bg-gray-50;
+}
+
+.menu-link .anticon{
+  display: flex;
+  justify-content: center;
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.menu-link.active{
+  @apply !text-[#40a9ff]
+}
